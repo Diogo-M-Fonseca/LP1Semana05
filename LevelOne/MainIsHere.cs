@@ -12,5 +12,9 @@ namespace LevelOne
         {
             Console.WriteLine("Hello LP1!");
         }
+        public static void printHelloworld()
+        {
+            
+        }
     }
 }
