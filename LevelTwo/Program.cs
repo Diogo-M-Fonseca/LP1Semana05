@@ -16,6 +16,20 @@ namespace LevelTwo
 
                 AnsiConsole.Write(tux);
             }
+           else
+            {
+                string image_width = args[1];
+                string image_name = args[0];
+                int width = int.Parse(image_width);
+                CanvasImage image = new CanvasImage(image_name);
+                image.MaxWidth(width);
+
+                AnsiConsole.Write(image);
+            }
+
         }
     }
 }
+
+ 
+ 
