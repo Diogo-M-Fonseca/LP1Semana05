@@ -1,7 +1,10 @@
 ﻿using System;
 
 namespace LevelOne
-{
+{  
+    /// <summary>
+    /// main class
+    /// </summary>
     public class Program
     {  
         /// <summary>
