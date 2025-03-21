@@ -1,4 +1,5 @@
 ﻿using System;
+using Spectre.Console;
 
 namespace LevelTwo
 {
@@ -6,7 +7,15 @@ namespace LevelTwo
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            if (args.Length == 0)
+            {
+
+                CanvasImage tux = new CanvasImage("tux.jpg");
+
+                tux.MaxWidth(24);
+
+                AnsiConsole.Write(tux);
+            }
         }
     }
 }
