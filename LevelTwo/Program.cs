@@ -12,7 +12,7 @@ namespace LevelTwo
             if (args.Length == 0)
             {
 
-                CanvasImage tux = new CanvasImage("tux.jpg");
+                CanvasImage tux = new CanvasImage(".\\tux.jpg");
 
                 tux.MaxWidth(24);
 
