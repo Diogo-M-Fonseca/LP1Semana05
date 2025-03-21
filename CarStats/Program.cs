@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using Bogus;
+using Bogus.DataSets;
 using Spectre.Console;
 
 namespace CarStats
@@ -12,8 +14,17 @@ namespace CarStats
             bc.AddItem("Dacia",12);
 
             Randomizer.Seed = new Random(int.Parse(args[0]));
-            Faker faker = new Faker();
+            Faker faker = new Faker("V");
+            
+        }
+         public string Manufacturer()
+        {
+            return GetRandomArrayItem("manufacturer");
+        }
 
+        private string GetRandomArrayItem(string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
